@@ -47,6 +47,6 @@ jobs:
         path: artifacts
 
     - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
+      run: mvn deploy -s $GITHUB_WORKSPACE/hiring/settings.xml
       env:
         GITHUB_TOKEN: ${{ github.token }}
