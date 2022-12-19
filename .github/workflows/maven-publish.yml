@@ -39,7 +39,7 @@ jobs:
       run: | 
            mvn -B package --file hiring/pom.xml
            mkdir artifacts && ls && cp hiring/target/*.jar artifacts
-           cd artifcats && ls
+           cd artifacts && ls
     - name: Save Artifcats
       uses: actions/upload-artifact@v2
       with:
